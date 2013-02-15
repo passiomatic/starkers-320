@@ -76,8 +76,8 @@
 		//wp_register_script( 'helper', get_template_directory_uri().'/javascripts/helper.js' );
 		//wp_enqueue_script( 'helper' );
 
-		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
-    wp_enqueue_style( 'screen' );
+		wp_register_style( 'style', get_stylesheet_directory_uri().'/style.css', '', '', 'all' );
+    wp_enqueue_style( 'style' );
 	}	
 
 	/* ========================================================================================================================

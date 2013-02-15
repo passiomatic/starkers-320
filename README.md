@@ -24,12 +24,12 @@ Remove the .sass-cache file:
     make clean
 
 
-Using "Upstarts"
+Using Upstarts
 ----
 
-"Upstarts" are responsive design patterns for the things we build every day. They are included in Starkers 320 but turned off by default. 
+"Upstarts" are responsive design patterns for the things we build every day. They are included in Starkers 320 but turned off by default to save a few bytes. 
 
-To activate upstarts uncomment these @import lines at the bottom of ./scss/style.scss:
+To activate Upstarts uncomment these @import lines at the bottom of ./scss/style.scss:
 
     //  11. UPSTARTS 			==============================
     
@@ -58,7 +58,7 @@ What's missing and changed?
  
   * Removed all 320 and Up Less/SASS file options, except the SCSS variant
   * Added a wrapping DIV for the main page content
-  * Added searchform.php to allow some customization of the WordPress search form
+  * Added searchform.php to allow some customization for the WordPress search form
   * Merged JavaScript files of Starkers and 320 and Up
   * Upgraded Font Awesome to version 3.0.2
   
