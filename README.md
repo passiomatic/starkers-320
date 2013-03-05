@@ -52,17 +52,17 @@ Including Javascript utilities
 
 To activate Javascript files uncomment these lines in the "starkers_script_enqueuer" function found in functions.php file:
 
-		// Include site scripts
-		wp_register_script( 'site', get_template_directory_uri().'/javascripts/site.js', array( 'jquery' ) );
-		wp_enqueue_script( 'site' );
-
-		// Activate Modernizr, see: http://modernizr.com/
-		wp_register_script( 'modernizr', get_template_directory_uri().'/javascripts/modernizr-min.js' );
-		wp_enqueue_script( 'modernizr' );
-		
-		// Include misc. helper scripts
-		wp_register_script( 'helper', get_template_directory_uri().'/javascripts/helper.js' );
-		wp_enqueue_script( 'helper' );
+    // Include site scripts
+    wp_register_script( 'site', get_template_directory_uri().'/javascripts/site.js', array( 'jquery' ) );
+    wp_enqueue_script( 'site' );
+    
+    // Activate Modernizr, see: http://modernizr.com/
+    wp_register_script( 'modernizr', get_template_directory_uri().'/javascripts/modernizr-min.js' );
+    wp_enqueue_script( 'modernizr' );
+    
+    // Include misc. helper scripts
+    wp_register_script( 'helper', get_template_directory_uri().'/javascripts/helper.js' );
+    wp_enqueue_script( 'helper' );
 
 By enabling site.js the WordPress JQuery version is automatically included too.
 
