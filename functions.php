@@ -65,11 +65,11 @@
 	function starkers_script_enqueuer() {
 		
 		// Include site scripts
-		//wp_register_script( 'site', get_template_directory_uri().'/javascripts/site.js', array( 'jquery' ) );
-		//wp_enqueue_script( 'site' );
+  	//wp_register_script( 'site', get_template_directory_uri().'/javascripts/site.js', array( 'jquery' ));
+  	//wp_enqueue_script( 'site' );
 
 		// Activate Modernizr, see: http://modernizr.com/
-		//wp_register_script( 'modernizr', get_template_directory_uri().'/javascripts/modernizr-min.js');
+		//wp_register_script( 'modernizr', get_template_directory_uri().'/javascripts/modernizr-min.js' );
 		//wp_enqueue_script( 'modernizr' );
 		
 		// Include misc. helper scripts

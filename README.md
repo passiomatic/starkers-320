@@ -1,7 +1,7 @@
 Starkers 320
 ============
 
-Starkers 320 is a mix of WordPress Starkers theme and the 320 and Up mobile-first boilerplate. Quoting the orginal Starkers authors:
+Starkers 320 is a mix of WordPress Starkers theme and the 320 and Up mobile-first boilerplate. Quoting the original Starkers authors:
 
 > Starkers is a bare-bones WordPress theme created to act as a starting point for the theme designer. Free of all style, presentational elements, and non-semantic  markup, Starkers is the perfect ‘blank slate’ for all your WordPress projects. Best of all: it’s free and fully GPL-licensed, so you can use it for whatever you like — even commercial work.
 
@@ -15,7 +15,7 @@ Update WordPress style.css with latest changes:
   
     make update
   
-Tell SASS processor to rebuild style.css automatically when a SCSS file changes:
+Tell SASS processor to rebuild style.css automagically when a SCSS file changes:
   
     make watch
   
@@ -47,16 +47,30 @@ Then rebuild style.css with:
 There are some "Upstarts" demo files under ./scss/upstarts folder.
 
 
-Including JavaScripts utilities
+Including Javascript utilities
 ----
 
-@@TODO.
+To activate Javascript files uncomment these lines in the "starkers_script_enqueuer" function found in functions.php file:
+
+		// Include site scripts
+		wp_register_script( 'site', get_template_directory_uri().'/javascripts/site.js', array( 'jquery' ) );
+		wp_enqueue_script( 'site' );
+
+		// Activate Modernizr, see: http://modernizr.com/
+		wp_register_script( 'modernizr', get_template_directory_uri().'/javascripts/modernizr-min.js' );
+		wp_enqueue_script( 'modernizr' );
+		
+		// Include misc. helper scripts
+		wp_register_script( 'helper', get_template_directory_uri().'/javascripts/helper.js' );
+		wp_enqueue_script( 'helper' );
+
+By enabling site.js the WordPress JQuery version is automatically included too.
 
 
 What's missing and changed?
 ----
  
-  * Removed all 320 and Up Less/SASS file options, except the SCSS variant
+  * Removed all 320 and Up Less/SASS file options except for the SCSS variant
   * Added a wrapping DIV for the main page content
   * Added searchform.php to allow some customization for the WordPress search form
   * Merged JavaScript files of Starkers and 320 and Up
