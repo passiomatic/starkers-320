@@ -1,7 +1,7 @@
 Starkers 320
 ============
 
-Starkers 320 is a mix of WordPress Starkers theme and the 320 and Up mobile-first boilerplate. Quoting the original Starkers authors:
+Starkers 320 is a mix of WordPress Starkers theme and 320 and Up mobile-first boilerplate. Quoting the original Starkers authors:
 
 > Starkers is a bare-bones WordPress theme created to act as a starting point for the theme designer. Free of all style, presentational elements, and non-semantic  markup, Starkers is the perfect ‘blank slate’ for all your WordPress projects. Best of all: it’s free and fully GPL-licensed, so you can use it for whatever you like — even commercial work.
 
@@ -11,7 +11,7 @@ Working with SASS files
 
 Download SASS utilities at [sass-lang.com/download.html](http://sass-lang.com/download.html).
 
-Update WordPress style.css with latest changes:
+Update WordPress style.css with your latest changes:
   
     make update
   
@@ -19,7 +19,7 @@ Tell SASS processor to rebuild style.css automagically when a SCSS file changes:
   
     make watch
   
-Remove the .sass-cache file:
+Remove the .sass-cache directory:
 
     make clean
 
